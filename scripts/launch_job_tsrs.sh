@@ -8,7 +8,7 @@
 #SBATCH -o slurm.%j.out
 #SBATCH -e slurm.%j.out
 
-myDir=/scratch/rraborn/Phytop_tss/scripts/tsr
+myDir=/scratch/rraborn/Phytop_tss/tsr
 
 module load r/4.0.2
 
