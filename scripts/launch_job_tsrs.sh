@@ -2,6 +2,8 @@
 
 #SBATCH -n 1
 #SBATCH -t 0-8:00
+#SBATCH -p cmecpu1
+#SBATCH -q cmeqos
 #SBATCH -A rraborn
 #SBATCH -o slurm.%j.out
 #SBATCH -e slurm.%j.out
