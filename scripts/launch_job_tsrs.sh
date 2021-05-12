@@ -10,6 +10,8 @@
 
 myDir=/scratch/rraborn/Phytop_tss/scripts/tsr
 
+module load r/4.0.2
+
 echo "Launching job"
 
 cd $myDir
