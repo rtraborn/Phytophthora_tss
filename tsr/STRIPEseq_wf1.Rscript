@@ -7,17 +7,14 @@ debugme      <- 1
 pupstream    <- 150
 pdownstream  <- 150
 
-
-
 # Start the fun ...: 
 #
-source("https://bioconductor.org/biocLite.R")
 library("TSRchitect")
 library("GenomicRanges")
-
+library("bumphunter")
 
 BAMDIR  <- c("../bams")
-PdGFF3  <- c("/scratch/rraborn/STRIPES_Phytop/STRIPES/PtGENOME/PtGENOME/GCF_000142945.1_ASM14294v1_genomic.gff")
+PdGFF3  <- c("/scratch/rraborn/STRIPES_Phytop/STRIPES/PtGENOME/GCF_000142945.1_ASM14294v1_genomic.gff")
 
 # ... initializing the tssObj object:
 PdSTRIPE <- loadTSSobj("Phytop. STRIPE-seq data", BAMDIR, isPairedBAM=TRUE, isPairedBED=FALSE, sampleNames=c("Pt121", "Pt132", "Pt142", "Pt221", "Pt222"), replicateIDs=c(1,1,1,2,2))
